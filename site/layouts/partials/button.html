@@ -1,0 +1,7 @@
+{{ $type_class := printf "c-button--%s" .type }}
+{{ $size_class := printf "c-button--%s" .size }}
+<a class="c-button {{ $type_class }} {{ $size_class }}" 
+   href="{{ .url }}">{{ .text }}</a>
+{{ if .has_icon }}
+    {{ partial "icon" }}
+{{ end }}

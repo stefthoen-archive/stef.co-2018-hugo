@@ -1,0 +1,16 @@
+.header {
+	padding-top: 2em;
+
+	&__title {
+		margin: 0;
+	}
+
+	&__logo {
+		margin: 0 auto;
+		display: block !important;
+	}
+
+	@media screen and (max-width: 480px) {
+		@include grid(48, 2);
+	}
+}

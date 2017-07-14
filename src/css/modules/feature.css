@@ -1,0 +1,25 @@
+.feature {
+	@include grid(16, 1);
+	@media screen and (max-width: 480px) {
+		@include grid(48, 1);
+		margin-top: $vertical-margin / 2;
+	}
+
+	&__icon {
+		margin: 0 auto;
+		display: block !important;
+	}
+
+	h3 {
+		margin-top: $vertical-margin / 2;
+		margin-bottom: 0;
+		font-size: $large;
+	}
+
+	p {
+		margin-top: 0;
+		@media screen and (max-width: 480px) {
+			text-align: center;
+		}
+	}
+}
