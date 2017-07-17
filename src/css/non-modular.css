@@ -103,10 +103,10 @@ footer #social-icons li {
 }
 
 #copyright {
-    width: 100%;
-    float: left;
+    margin-bottom: 0;
+    display: block;
+    padding-bottom: 3rem;
     text-align: center;
-    color: darken(var(--third-color), 40%); 
 }
 
 #copyright a {

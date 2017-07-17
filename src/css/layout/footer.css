@@ -1,5 +1,6 @@
 .footer {
     margin: calc(var(--vertical-margin) * .5) auto;
+    margin-bottom: 0;
     font-size: var(--smaller);
     font-family: var(--footer-family);
     color: var(--third-color);
