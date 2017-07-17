@@ -1,4 +1,6 @@
-$first-color: #333;
-$second-color: #ccc;
-$third-color: #fff;
-$fourth-color: #fffbef;
+:root {
+    --first-color: #333;
+    --second-color: #ccc;
+    --third-color: #fff;
+    --fourth-color: #fffbef;
+}

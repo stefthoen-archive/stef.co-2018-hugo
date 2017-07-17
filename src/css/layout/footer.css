@@ -1,53 +1,53 @@
 .footer {
-	max-width: 768px;
-	margin: $vertical-margin * .5 auto;
-	font-size: $smaller;
-	font-family: $footer-family;
-	color: $third-color;
+    max-width: 768px;
+    margin: var(--vertical-margin) * .5 auto;
+    font-size: var(--smaller);
+    font-family: var(--footer-family);
+    color: var(--third-color);
+}
 
-	h2 {
-		margin-top: $vertical-margin;
-		font-size: $normal;
-		letter-spacing: .2em;
-		color: $third-color;
-		text-align: left;
-	}
+.footer h2 {
+    margin-top: var(--vertical-margin);
+    font-size: var(--normal);
+    letter-spacing: .2em;
+    color: var(--third-color);
+    text-align: left;
+}
 
-	ul {
-		padding-left: 0;
-	}
+.footer	ul {
+    padding-left: 0;
+}
 
-	li {
-		margin-left: none;
-		list-style-type: none;
-	}	
+.footer li {
+    margin-left: none;
+    list-style-type: none;
+}	
 
-	a {
-		border-bottom: 0;
-		font-weight: normal;
-		color: $third-color;
+.footer a {
+    border-bottom: 0;
+    font-weight: normal;
+    color: var(--third-color);
+}
 
-		&:hover {
-			border-bottom: 1px solid $third-color;
-		}
-	}
+.footer a:hover {
+    border-bottom: 1px solid var(--third-color);
+}
 
-	.widget {
-		@include grid(16, 1);
-	}
+.footer .widget {
+    /* @include grid(16, 1); */
+}
 
-	@media screen and (max-width: 480px) {
-		footer {
-			text-align: center;
+@media screen and (max-width: 480px) {
+    footer {
+        text-align: center;
+    }
 
-			h2 {
-				text-align: center;
-			}
+    footer h2 {
+        text-align: center;
+    }
 
-			.widget {
-				width: 100%;
-				margin-left: 0 !important;
-			}
-		}
-	}
+    .widget {
+        width: 100%;
+        margin-left: 0 !important;
+    }
 }

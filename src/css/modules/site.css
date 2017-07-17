@@ -1,14 +1,19 @@
 .site {
-	margin-bottom: $vertical-margin;
-	overflow: auto;
-	&:last-child {
-		margin-bottom: 0;
-	}
-	@media screen and (max-width: 480px) {
-		@include grid(48, 2);
-		margin-bottom: 0;
-		p {
-			font-size: $small;
-		}
-	}
+    margin-bottom: var(--vertical-margin);
+    overflow: auto;
+}
+
+.site:last-child {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 480px) {
+    .site {
+        /* @include grid(48, 2); */
+        margin-bottom: 0;
+    }
+
+    .site p {
+        font-size: var(--small);
+    }
 }

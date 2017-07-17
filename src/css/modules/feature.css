@@ -1,25 +1,27 @@
 .feature {
-	@include grid(16, 1);
-	@media screen and (max-width: 480px) {
-		@include grid(48, 1);
-		margin-top: $vertical-margin / 2;
-	}
+    /* @include grid(16, 1); */
 
-	&__icon {
-		margin: 0 auto;
-		display: block !important;
-	}
+    @media screen and (max-width: 480px) {
+        /* @include grid(48, 1); */
+        margin-top: var(--vertical-margin) / 2;
+    }
+}
 
-	h3 {
-		margin-top: $vertical-margin / 2;
-		margin-bottom: 0;
-		font-size: $large;
-	}
+.feature__icon {
+    margin: 0 auto;
+    display: block !important;
+}
 
-	p {
-		margin-top: 0;
-		@media screen and (max-width: 480px) {
-			text-align: center;
-		}
-	}
+.feature h3 {
+    margin-top: var(--vertical-margin) / 2;
+    margin-bottom: 0;
+    font-size: var(--large);
+}
+
+.feature p {
+
+    margin-top: 0;
+    @media screen and (max-width: 480px) {
+        text-align: center;
+    }
 }

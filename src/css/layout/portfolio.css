@@ -1,50 +1,46 @@
-#portfolio {
-	img {
-		width: 98%;
-		margin-right: auto;
-		margin-left: auto;
-		display: block;
-		box-shadow: rgba(#000, .3) 0 0 8px 1px;
+#portfolio img {
+    width: 98%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    box-shadow: rgba(#000, .3) 0 0 8px 1px;
+}
 
-		&:hover {
-			box-shadow: rgba(#000, .5) 0 0 8px 1px;
-		}
-	}
+#portfolio img:hover {
+    box-shadow: rgba(#000, .5) 0 0 8px 1px;
+}
 
-	.go-to-link {
-		padding: .5em 2em;
-		position: absolute;
-		top: 84%; 
-		right: 0;
-		border-bottom: 0;
-		background-color: $first-color;
-		font-size: $smaller;
-		letter-spacing: .1em;
-		color: $third-color;
+.go-to-link {
+    padding: .5em 2em;
+    position: absolute;
+    top: 84%; 
+    right: 0;
+    border-bottom: 0;
+    background-color: var(--first-color);
+    font-size: var(--smaller);
+    letter-spacing: .1em;
+    color: var(--third-color);
+}
 
-		&:after {
-			width: 0;  
-			height: 0;  
-			content: ' ';  
-			position: absolute;  
-			top: -10px;
-			right: 0;  
-			z-index: -10;
-			border-width: 5px 10px;  
-			border-style: solid;  
-			border-color: transparent transparent $second-color $second-color;
-		}
-	}
+.go-to-link:after {
+    width: 0;  
+    height: 0;  
+    content: ' ';  
+    position: absolute;  
+    top: -10px;
+    right: 0;  
+    z-index: -10;
+    border-width: 5px 10px;  
+    border-style: solid;  
+    border-color: transparent transparent var(--second-color) var(--second-color);
 }
 
 @media screen and (max-width: 480px) {
-	#portfolio {
-		img {
-			box-shadow: none;
+    #portfolio img {
+        box-shadow: none;
+    }
 
-			&:hover {
-				box-shadow: none;
-			}
-		}
-	}
+    #portfolio img:hover {
+        box-shadow: none;
+    }
 }

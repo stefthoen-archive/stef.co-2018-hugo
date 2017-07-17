@@ -1,9 +1,5 @@
-.about {
-	&__portret {
-		img {
-			width: 200px;
-			margin: 0 auto;
-			display: block;
-		}
-	}
+.about__portret img {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
 }

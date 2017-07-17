@@ -1,16 +1,20 @@
 .header {
-	padding-top: 2em;
+    padding-top: 2em;
+}
 
-	&__title {
-		margin: 0;
-	}
+.header__title {
+    margin: 0;
+}
 
-	&__logo {
-		margin: 0 auto;
-		display: block !important;
-	}
+.header__subtitle {
+    text-align: center;
+}
 
-	@media screen and (max-width: 480px) {
-		@include grid(48, 2);
-	}
+.header__subtitle p {
+    margin: 0 !important;
+}
+
+.header__logo {
+    margin: 0 auto;
+    display: block !important;
 }

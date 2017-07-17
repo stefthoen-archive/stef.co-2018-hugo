@@ -1,15 +1,18 @@
 #header-home {
-	max-width: 728px;
-	padding: 0 3%;
-	margin: $vertical-margin auto;
-	img {
-		display: block;
-		margin: 0 auto;
-	}
-	a {
-		border-bottom: none;
-		&:hover {
-			border-bottom: none;
-		}
-	}
+    max-width: 728px;
+    padding: 0 3%;
+    margin: $vertical-margin auto;
+}
+
+#header-home img {
+    display: block;
+    margin: 0 auto;
+}
+
+#header-home a {
+    border-bottom: none;
+}
+
+#header-home a:hover {
+    border-bottom: none;
 }

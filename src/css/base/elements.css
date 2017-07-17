@@ -4,26 +4,26 @@
 
 body {
 	position: relative;
-	border-top: 6px solid $first-color;
-	background: $fourth-color url('../img/bg.png');
-	font-size: $normal;
-	font-family: $body-family;
-	color: $first-color; 
-	line-height: $line-height;
+	border-top: 6px solid var(--first-color);
+	background: var(--fourth-color) url('../img/bg.png');
+	font-size: var(--normal);
+	font-family: var(--body-family);
+	color: var(--first-color); 
+	line-height: var(--line-height);
 }
 
 a {
-	border-bottom: 1px solid $second-color;
-	color: $first-color;
+	border-bottom: 1px solid var(--second-color);
+	color: var(--first-color);
 	text-decoration: none;
 }
 
 a:hover {
-	border-bottom: 1px solid $first-color;
+	border-bottom: 1px solid var(--first-color);
 }
 
 p {
-	margin: $vertical-margin 0;
+	margin: var(--vertical-margin) 0;
 }
 
 h1, 
@@ -32,29 +32,29 @@ h3,
 h4, 
 h5, 
 h6 {
-	font-family: $display-family;
+	font-family: var(--display-family);
 	letter-spacing: .1em;
-	color: $first-color;
+	color: var(--first-color);
 	text-align: center;
 	text-transform: uppercase;
 }
 
 h1 {
-	font-size: $huge;
+	font-size: var(--huge);
 	@media screen and (max-width: 480px) {
-		font-size: $big;
+		font-size: var(--big);
 	}
 }
 
 h3 {
-	font-size: $big;
+	font-size: var(--big);
 	@media screen and (max-width: 480px) {
-		font-size: $large;
+		font-size: var(--large);
 	}
 }
 
 time {
-	color: lighten($first-color, 20%);
+	color: lighten(var(--first-color), 20%);
 }
 
 em {

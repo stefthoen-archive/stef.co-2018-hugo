@@ -1,5 +1,5 @@
 #intro {
 	p {
-		font-size: $small;
+		font-size: var(--small);
 	}
 }

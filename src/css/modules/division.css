@@ -1,8 +1,9 @@
 .division {
 	border-bottom: 1px dashed black;
-	font-size: $large;
-	margin-bottom: $vertical-margin;
+	font-size: var(--large);
+	margin-bottom: var(--vertical-margin);
+
 	span {
-		color: $second-color;
+		color: var(--second-color);
 	}
 }
