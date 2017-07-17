@@ -1,0 +1,14 @@
+:root {
+    @custom-media --breakpoint-10 (min-width: 600px);
+    @custom-media --breakpoint-20 (min-width: 750px);
+    @custom-media --breakpoint-30 (min-width: 1000px);
+    @custom-media --breakpoint-40 (min-width: 1200px);
+
+    --space-default: 16px;
+    --space-10: 4px;
+    --space-20: 8px;
+    --space-25: 12px; /* Not default */
+    --space-30: 16px;
+    --space-40: 32px;
+    --space-50: 64px;
+}

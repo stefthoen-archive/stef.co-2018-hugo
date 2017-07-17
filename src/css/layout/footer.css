@@ -1,6 +1,5 @@
 .footer {
-    max-width: 768px;
-    margin: var(--vertical-margin) * .5 auto;
+    margin: calc(var(--vertical-margin) * .5) auto;
     font-size: var(--smaller);
     font-family: var(--footer-family);
     color: var(--third-color);
@@ -31,10 +30,6 @@
 
 .footer a:hover {
     border-bottom: 1px solid var(--third-color);
-}
-
-.footer .widget {
-    /* @include grid(16, 1); */
 }
 
 @media screen and (max-width: 480px) {

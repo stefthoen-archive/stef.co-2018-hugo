@@ -3,9 +3,11 @@
 
 @import 'theme/font.css';
 @import 'theme/color.css';
+@import 'theme/breakpoint.css';
 
 @import 'base/elements.css';
 
+@import 'layout/grid.css';
 @import 'layout/intro.css';
 @import 'layout/portfolio.css';
 @import 'layout/header.css';
@@ -14,6 +16,7 @@
 @import 'layout/footer-wrapper.css';
 @import 'layout/l-wrapper.css';
 @import 'layout/about.css';
+
 @import 'modules/feature.css';
 @import 'modules/division.css';
 @import 'modules/site.css';
