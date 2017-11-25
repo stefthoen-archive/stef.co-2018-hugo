@@ -2,4 +2,11 @@
 	max-width: 768px;
 	margin: 0 auto;
 	overflow: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @media(--breakpoint-20) {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
