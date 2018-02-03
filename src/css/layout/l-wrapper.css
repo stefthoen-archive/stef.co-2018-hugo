@@ -10,3 +10,9 @@
         padding-right: 0;
     }
 }
+
+.l-wrapper-wide {
+	max-width: 848px;
+    padding-left: 40px;
+    padding-right: 40px;
+}

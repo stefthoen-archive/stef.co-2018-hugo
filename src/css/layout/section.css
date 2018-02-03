@@ -1,17 +1,8 @@
-section {
-	max-width: 728px;
-	padding: 0 3%;
-	margin: $vertical-margin auto;
-	@include clearfix;
+#about {
+    margin-top: -200px;
+	background: var(--fourth-color) url('../img/bg.png');
+    /* filter: drop-shadow(0 0 30px #333); */
 }
 
 @media screen and (max-width: 480px) {
-	section {
-		p {
-			font-size: $small;
-		}
-		label {
-			font-size: $normal;
-		}
-	}
 }

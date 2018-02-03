@@ -1,5 +1,6 @@
 .header {
-    padding-top: 2em;
+	background: url('../img/foto_stef.jpg');
+    height: 900px;
 }
 
 .header__title {
@@ -7,6 +8,7 @@
 }
 
 .header__subtitle {
+    display: inline;
     text-align: center;
 }
 
