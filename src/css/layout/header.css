@@ -1,6 +1,11 @@
 .header {
-	background: url('../img/foto_stef.jpg');
+	background: url('../img/foto_stef.jpg') no-repeat center center fixed;
     height: 900px;
+    background-size: cover;
+
+    @media screen and (max-width: 480px) {
+        height: 620px;
+    }
 }
 
 .header__title {
@@ -10,6 +15,10 @@
 .header__subtitle {
     display: inline;
     text-align: center;
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 }
 
 .header__subtitle p {
