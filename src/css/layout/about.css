@@ -1,3 +1,7 @@
+#about {
+    box-shadow: -5px -1px 5px -5px #333, 5px -1px 5px -5px #333;
+}
+
 .about__portret img {
     width: 200px;
     margin: 0 auto;

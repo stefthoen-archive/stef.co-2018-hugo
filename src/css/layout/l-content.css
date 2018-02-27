@@ -1,8 +1,4 @@
 @media screen and (max-width: 480px) {
-    .l-content {
-		/* @include grid(48, 2); */
-    }
-
     .l-content p {
         font-size: var(--small);
 	}
