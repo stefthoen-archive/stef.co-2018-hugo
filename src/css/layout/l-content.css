@@ -1,3 +1,7 @@
+.l-content {
+    padding-top: 3rem;
+}
+
 @media screen and (max-width: 480px) {
     .l-content p {
         font-size: var(--small);

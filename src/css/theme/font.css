@@ -2,7 +2,6 @@
     --body-family: Georgia, serif;
     --display-family: LeagueGothic, sans-serif;
     --footer-family: Arial, sans-serif;
-
     --tiny: 8.889px;
     --smaller: 13.333px;
     --small: 18px;
@@ -10,7 +9,6 @@
     --large: 30px;
     --big: 45px;
     --huge: 67.5px;
-
     --line-height: 1.6;
     --vertical-margin: var(--normal) * var(--line-height);
 }

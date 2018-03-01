@@ -2,8 +2,4 @@
 	border-top: 6px solid var(--first-color);
     margin-top: -200px;
 	background: var(--fourth-color) url('../img/bg.png');
-    /* filter: drop-shadow(0 0 30px #333); */
-}
-
-@media screen and (max-width: 480px) {
 }
