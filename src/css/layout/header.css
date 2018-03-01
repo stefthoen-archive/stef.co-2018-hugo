@@ -11,21 +11,3 @@
 .header__title {
     margin: 0;
 }
-
-.header__subtitle {
-    display: inline;
-    text-align: center;
-
-    @media screen and (max-width: 480px) {
-        display: none;
-    }
-}
-
-.header__subtitle p {
-    margin: 0 !important;
-}
-
-.header__logo {
-    margin: 0 auto;
-    display: block !important;
-}
