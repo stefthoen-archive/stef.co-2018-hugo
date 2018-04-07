@@ -2,6 +2,10 @@ baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Stef.co"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsOptions="linenos=inline, nobackground=True"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details: 

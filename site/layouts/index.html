@@ -1,22 +1,10 @@
-{{ partial "header" . }}
-
-<div class="cta">
-    <div>Mail: <a href="stef@baardbaard.nl">stef@baardbaard.nl</a></div>
-    <div>Tel: +33 (0) 6 8121 6559</div>
-</div>
+{{ define "main" }}
 <header class="header"></header>
 
 <section id="about" class="l-wrapper l-wrapper-wide l-content l-content-page">
     <h2 class="division">Stef Thoen</h2>
     <p>Ik ben een freelance front-end developer met een achtergrond in Informatica en Filosofie. Ik houd van toegankelijke websites die heel snel zijn.</p>
 </section>
-<section class="l-wrapper l-wrapper-wide l-content l-content-page">
-    <div id="features" class="c-grid c-grid--thirds">
-        <p class="c-grid-item">Vier jaar geleden vertrokken we met <a href="http://joepdezoeperd.nl">Joep de Zoeperd</a> en ben ik door Europa gaan zwerven terwijl ik mooie websites maakte voor mijn fijne klanten.</p> 
-        <p class="c-grid-item">We zijn gestrand in de Morvan in Frankrijk, waar we twee jaar hebben gewoond in een <a href="https://www.paprikapatterns.com/building-home-mounting-yurt/">yurt</a>. Zomer 2017 hebben we een <a href="http://peuapeu.nl">oude boerderij gekocht die we aan het opknappen zijn</a>.</p>
-        <p class="c-grid-item">Ik schrijf heel sporadisch wel eens wat op <a href="http://twitter.com/stefthoen">Twitter</a>, plaats wel eens een (klus) foto op <a href="https://instagram.com/scnthoen">Instagram</a> en doe vrijwel niets op <a href="">LinkedIn</a>.</p>
-    </div>
-</section> <!-- section#about -->
 
 <section id="service" class="l-wrapper l-content l-content-page">
     <h2 class="division">Wat doe ik?</h2>
@@ -36,36 +24,21 @@
             <h3>De service</h3>
             <p>Na oplevering voer ik onderhoud uit, host ik je website, installeer updates en 'tweak' de website voor optimale veiligheid en conversie.</p>
         </article>
-    </div> <!-- div#features -->
-</section> <!-- section.features -->
+    </div>
+</section>
 
 <section id="portfolio" class="l-wrapper l-content l-content-page">
     <h2 class="division">Wat maak ik?</h2>
     <p>Ik bouw responsive websites op maat. Dit gaat van een simpele one-page tot complete webshops. HTML, CSS en JavaScript kennen voor mij geen geheimen. WordPress is mijn CMS naar keuze, maar ik heb ervaring met een boel andere back-end talen en frameworks.</p> 
     <p>Hieronder volgt een greep uit mijn meest recente werk. Wil je meer zien <a href="mailto:stef@baardbaard.nl">neem dan contact op</a>.
 
-    {{ partial "case.html" (dict "Name" "Nexus Instituut" "URL" "https://www.nexus-instituut.nl" "ImageSrc" "img/portfolio/nexus-instituut.jpg" "Text" "De website van Nexus Instituut heb ik responsive gemaakt waardoor hij meeschaalt met verschillende scherm formaten. De oude website gebruikte een maatwerk CMS. Onder luid gejuich van de Nexus redactie heb ik hem omgezet naar WordPress. Een nieuwe WooCommerce store maakt dat klanten met groot gemak het laatste Nexus magazine kunnen bestellen.") }}
-
-    {{ partial "case.html" (dict "Name" "Paprika Patterns" "URL" "https://www.paprikapatterns.com" "ImageSrc" "img/portfolio/paprika-patterns.jpg" "Text" ("Voor Paprika Patterns heb ik een responsive WordPress thema gemaakt met een blog en een webshop met behulp van de <a target=\"_blank\" href=\"http://www.woothemes.com/woocommerce/\">Woocommerce</a> plugin." | safeHTML)) }}
-
-    {{ partial "case.html" (dict "Name" "Joep de Zoeperd" "URL" "http://joepdezoeperd.nl" "ImageSrc" "img/portfolio/joep-de-zoeperd.jpg" "Text" "Joep de Zoeperd is mijn brandweerwagen camper waarmee ik een jaar door Europa heb gereisd. Voor ons vertrek heb ik deze simpele one-pager gemaakt.") }}
-
-    {{ partial "case.html" (dict "Name" "Echotoon" "URL" "http://echotoon.nl" "ImageSrc" "img/portfolio/echotoon.jpg" "Text" ("Samen met visueel strateeg <a target=\"_blank\" href=\"http://irisvansen.nl\">Iris van Sen</a> hebben we een responsive WordPress website gemaakt voor Echotoon; de beste echoscopie praktijk van Groningen." | safeHTML)) }}
-
-    {{ partial "case.html" (dict "Name" "Parcival IT Projecten" "URL" "http://parcival-it.nl" "ImageSrc" "img/portfolio/parcival-it.jpg" "Text" ("Voor Parcival IT Projecten maakte ik een responsive one-page WordPress website. Met de vaste fotografe <a target=\"_blank\" href=\"http://suzicolpa.nl\">Suzi Colpa</a> zijn we naar het Muiderslot gegaan om foto's te maken." | safeHTML)) }}
-
-    {{ partial "case.html" (dict "Name" "Versatec Energy" "URL" "http://versatec.nl" "ImageSrc" "img/portfolio/versatec.jpg" "Text" ("Versatec Energy is een bedrijf dat support biedt aan de energie industrie. Er is veel content en die content moet ook allemaal te lezen zijn op een smartphone. Samen met <a target=\"_blank\" href=\"http://irisvansen.nl\">Iris van Sen</a> heb ik hun nieuwe responsive WordPress website ontwikkeld die er goed uit ziet op elk apparaat." | safeHTML)) }}
-
-    {{ partial "case.html" (dict "Name" "Iris van Sen" "URL" "http://irisvansen.nl" "ImageSrc" "img/portfolio/iris-van-sen.jpg" "Text" "Voor Iris van Sen ontwikkelde ik een responsive portfolio website, waarop zij op een mooie manier haar werk kan laten zien. Bekijk hem ook eens op je mobiel.") }}
-</section> <!-- section#portfolio -->
+    {{ range .Data.Pages }}
+        {{ .Render "summary" }}
+    {{ end }}
+</section>
 
 <section id="contact" class="l-wrapper l-content l-content-page">
     <h2 class="division">Waar kan ik je mee helpen?</h2>
     <p>Denk je dat ik je ergens bij kan helpen? Of je nu een simpele website nodig hebt, of je een creatief communicatiebureau hebt en een vaste dev'er nodig hebt om je designs te bouwen: Stuur mij een e-mail op <a href="mailto:stef@baardbaard.nl">stef@baardbaard.nl</a>. Bellen kan natuurlijk ook: +33 (0) 6 8121 6559.</p>
 </section>
-
-<p>
-  Hooray 🎉 - you've built this with <a href="https://github.com/netlify/victor-hugo">Victor-Hugo</a>!
-</p>
-
-{{ partial "footer" . }}
+{{ end }}

@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main>
+    <section id="posts" class="l-wrapper l-wrapper-wide l-content l-content-page">
+        {{ .Content }}
+        <ul>
+            {{ range .Data.Pages }}
+                <li>
+                    <a href="{{.Permalink}}">{{.Date.Format "2006-01-02"}} | {{.Title}}</a>
+                </li>
+            {{ end }}
+        </ul>
+    </section>
+</main>
+{{ end }}

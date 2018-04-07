@@ -1,0 +1,14 @@
+{{ define "main" }}
+<section id="case" class="l-wrapper l-wrapper-wide l-content l-content-page">
+<article class="site">
+    <h3>{{ .Title }}</h3>
+    <div class="site-image">
+        <a class="go-to-link" href="{{ .Params.siteurl }}" target="_blank">Ga naar de website</a>
+        <a href="{{ .Params.siteurl }}" target="_blank"><img src="/img/portfolio/{{ .Params.imagesrc }}" alt="{{ .Title }}"></a>
+    </div>
+    <div class="site__content">
+        {{ .Content }}
+    </div>
+</article>
+</section>
+{{ end }}
