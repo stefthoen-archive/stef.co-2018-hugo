@@ -43,62 +43,20 @@
     <h2 class="division">Wat maak ik?</h2>
     <p>Ik bouw responsive websites op maat. Dit gaat van een simpele one-page tot complete webshops. HTML, CSS en JavaScript kennen voor mij geen geheimen. WordPress is mijn CMS naar keuze, maar ik heb ervaring met een boel andere back-end talen en frameworks.</p> 
     <p>Hieronder volgt een greep uit mijn meest recente werk. Wil je meer zien <a href="mailto:stef@baardbaard.nl">neem dan contact op</a>.
-    <article class="site">
-        <h3>Nexus Instituut</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="https://www.nexus-instituut.nl" target="_blank">Ga naar de website</a>
-            <a href="https://www.nexus-instituut.nl" target="_blank"><img src="img/portfolio/nexus-instituut.jpg" alt="Nexus Instituut"></a>
-        </div> <!-- div.site-image -->
-        <p>De website van Nexus Instituut heb ik responsive gemaakt waardoor hij meeschaalt met verschillende scherm formaten. De oude website gebruikte een maatwerk CMS. Onder luid gejuich van de Nexus redactie heb ik hem omgezet naar WordPress. Een nieuwe WooCommerce store maakt dat klanten met groot gemak het laatste Nexus magazine kunnen bestellen.</p>
-    </article>
-    <article class="site">
-        <h3>Paprika Patterns</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="https://www.paprikapatterns.com" target="_blank">Ga naar de website</a>
-            <a href="https://www.paprikapatterns.com" target="_blank"><img src="img/portfolio/paprika-patterns.jpg" alt="Paprika Patterns"></a>
-        </div> <!-- div.site-image -->
-        <p>Voor Paprika Patterns heb ik een responsive WordPress thema gemaakt met een blog en een webshop met behulp van de <a href="http://www.woothemes.com/woocommerce/">Woocommerce</a> plugin.</p>
-    </article>
-    <article class="site">
-        <h3>Joep de Zoeperd</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="http://joepdezoeperd.nl" target="_blank">Ga naar de website</a>
-            <a href="http://joepdezoeperd.nl" target="_blank"><img src="/img/portfolio/joep-de-zoeperd.jpg" alt="Joep de Zoeperd"></a>
-        </div> <!-- div.site-image -->
-        <p>Joep de Zoeperd is mijn brandweerwagen camper waarmee ik een jaar door Europa heb gereisd. Voor ons vertrek heb ik deze simpele one-pager gemaakt.</p>
-    </article>
-    <article class="site">
-        <h3>Echotoon</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="http://echotoon.nl" target="_blank">Ga naar de website</a>
-            <a href="http://echotoon.nl" target="_blank"><img src="/img/portfolio/echotoon.jpg" alt="Echotoon"></a>
-        </div> <!-- div.site-image -->
-        <p>Samen met visueel strateeg <a target="_blank" href="http://irisvansen.nl">Iris van Sen</a> hebben we een responsive WordPress website gemaakt voor Echotoon; de beste echoscopie praktijk van Groningen.</p>
-    </article>
-    <article class="site">
-        <h3>Parcival IT Projecten</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="http://parcival-it.nl" target="_blank">Ga naar de website</a>
-            <a href="http://parcival-it.nl" target="_blank"><img src="/img/portfolio/parcival-it.jpg" alt="Parcival IT Projecten"></a>
-        </div> <!-- div.site-image -->
-        <p>Voor Parcival IT Projecten maakte ik een responsive one-page WordPress website. Met de vaste fotografe <a target="_blank" href="http://suzicolpa.nl">Suzi Colpa</a> zijn we naar het Muiderslot gegaan om foto's te maken.</p>
-    </article>
-    <article class="site">
-        <h3>Versatec Energy</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="http://versatec.nl" target="_blank">Ga naar de website</a>
-            <a href="http://versatec.nl" target="_blank"><img src="/img/portfolio/versatec.jpg" alt="Versatec"></a>
-        </div> <!-- div.site-image -->
-        <p>Versatec Energy is een bedrijf dat support biedt aan de energie industrie. Er is veel content en die content moet ook allemaal te lezen zijn op een smartphone. Samen met <a target="_blank" href="http://irisvansen.nl">Iris van Sen</a> heb ik hun nieuwe responsive WordPress website ontwikkeld die er goed uit ziet op elk apparaat.</p>
-    </article>
-    <article class="site">
-        <h3>Iris van Sen</h3>
-        <div class="site-image">
-            <a class="go-to-link" href="http://irisvansen.nl" target="_blank">Ga naar de website</a>
-            <a href="http://irisvansen.nl" target="_blank"><img src="/img/portfolio/iris-van-sen.jpg" alt="Iris van Sen"></a>
-        </div> <!-- div.site-image -->
-        <p>Voor Iris van Sen ontwikkelde ik een responsive portfolio website, waarop zij op een mooie manier haar werk kan laten zien. Bekijk hem ook eens op je mobiel.</p>
-    </article>
+
+    {{ partial "case.html" (dict "Name" "Nexus Instituut" "URL" "https://www.nexus-instituut.nl" "ImageSrc" "img/portfolio/nexus-instituut.jpg" "Text" "De website van Nexus Instituut heb ik responsive gemaakt waardoor hij meeschaalt met verschillende scherm formaten. De oude website gebruikte een maatwerk CMS. Onder luid gejuich van de Nexus redactie heb ik hem omgezet naar WordPress. Een nieuwe WooCommerce store maakt dat klanten met groot gemak het laatste Nexus magazine kunnen bestellen.") }}
+
+    {{ partial "case.html" (dict "Name" "Paprika Patterns" "URL" "https://www.paprikapatterns.com" "ImageSrc" "img/portfolio/paprika-patterns.jpg" "Text" ("Voor Paprika Patterns heb ik een responsive WordPress thema gemaakt met een blog en een webshop met behulp van de <a target=\"_blank\" href=\"http://www.woothemes.com/woocommerce/\">Woocommerce</a> plugin." | safeHTML)) }}
+
+    {{ partial "case.html" (dict "Name" "Joep de Zoeperd" "URL" "http://joepdezoeperd.nl" "ImageSrc" "img/portfolio/joep-de-zoeperd.jpg" "Text" "Joep de Zoeperd is mijn brandweerwagen camper waarmee ik een jaar door Europa heb gereisd. Voor ons vertrek heb ik deze simpele one-pager gemaakt.") }}
+
+    {{ partial "case.html" (dict "Name" "Echotoon" "URL" "http://echotoon.nl" "ImageSrc" "img/portfolio/echotoon.jpg" "Text" ("Samen met visueel strateeg <a target=\"_blank\" href=\"http://irisvansen.nl\">Iris van Sen</a> hebben we een responsive WordPress website gemaakt voor Echotoon; de beste echoscopie praktijk van Groningen." | safeHTML)) }}
+
+    {{ partial "case.html" (dict "Name" "Parcival IT Projecten" "URL" "http://parcival-it.nl" "ImageSrc" "img/portfolio/parcival-it.jpg" "Text" ("Voor Parcival IT Projecten maakte ik een responsive one-page WordPress website. Met de vaste fotografe <a target=\"_blank\" href=\"http://suzicolpa.nl\">Suzi Colpa</a> zijn we naar het Muiderslot gegaan om foto's te maken." | safeHTML)) }}
+
+    {{ partial "case.html" (dict "Name" "Versatec Energy" "URL" "http://versatec.nl" "ImageSrc" "img/portfolio/versatec.jpg" "Text" ("Versatec Energy is een bedrijf dat support biedt aan de energie industrie. Er is veel content en die content moet ook allemaal te lezen zijn op een smartphone. Samen met <a target=\"_blank\" href=\"http://irisvansen.nl\">Iris van Sen</a> heb ik hun nieuwe responsive WordPress website ontwikkeld die er goed uit ziet op elk apparaat." | safeHTML)) }}
+
+    {{ partial "case.html" (dict "Name" "Iris van Sen" "URL" "http://irisvansen.nl" "ImageSrc" "img/portfolio/iris-van-sen.jpg" "Text" "Voor Iris van Sen ontwikkelde ik een responsive portfolio website, waarop zij op een mooie manier haar werk kan laten zien. Bekijk hem ook eens op je mobiel.") }}
 </section> <!-- section#portfolio -->
 
 <section id="contact" class="l-wrapper l-content l-content-page">

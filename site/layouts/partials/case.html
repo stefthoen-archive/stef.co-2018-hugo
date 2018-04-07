@@ -1,0 +1,8 @@
+<article class="site">
+    <h3>{{ .Name }}</h3>
+    <div class="site-image">
+        <a class="go-to-link" href="{{ .URL }}" target="_blank">Ga naar de website</a>
+        <a href="{{ .URL }}" target="_blank"><img src="{{ .ImageSrc }}" alt="{{ .Name }}"></a>
+    </div> <!-- div.site-image -->
+    <p>{{ .Text }}</p>
+</article> <!-- article.site -->
