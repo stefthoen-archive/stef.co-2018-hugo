@@ -1,41 +1,58 @@
 # Victor Hugo
 
-**A [Hugo](https://gohugo.io/) boilerplate for creating truly epic websites**
+**A Hugo boilerplate for creating truly epic websites**
 
-This is a boilerplate for using Hugo as a static site generator and Gulp + Webpack as your
-asset pipeline.
+This is a boilerplate for using [Hugo](https://gohugo.io/) as a static site generator and [Gulp](https://gulpjs.com/) + [Webpack](https://webpack.js.org/) as your asset pipeline.
 
-It's setup to use post-css and babel for CSS and JavaScript.
+Victor Hugo setup to use [PostCSS](http://postcss.org/) and [Babel](https://babeljs.io/) for CSS and JavaScript compiling/transpiling.
 
 This project is released under the [MIT license](LICENSE). Please make sure you understand its implications and guarantees.
 
 ## Usage
 
-Be sure that you have the latest node, npm and [Hugo](https://gohugo.io/) installed. If you need to install hugo on OSX, run:
+### Prerequisites
 
-```bash
-brew install hugo
-```
+You need to have the latest/LTS [node](https://nodejs.org/en/download/) and [npm](https://www.npmjs.com/get-npm) versions installed in order to use Victor Hugo.
 
-If you don't use OSX or don't use homebrew, follow the instructions for installation here instead:
-
-http://gohugo.io/overview/installing/
-
-Next, clone this repository and run:
+Next step, clone this repository and run:
 
 ```bash
 npm install
+```
+
+This will take some time and will install all packages necessary to run Victor Hugo and it's tasks.
+
+### Development
+
+While developing your website, use:
+
+```bash
 npm start
 ```
 
-Then visit http://localhost:3000/ - BrowserSync will automatically reload CSS or
-refresh the page when stylesheets or content changes.
+or
 
-To build your static output to the `/dist` folder, use:
+```bash
+gulp server
+```
+
+Then visit http://localhost:3000/ *- or a new browser windows popped-up already -* to preview your new website. BrowserSync will automatically reload the CSS or refresh the whole page, when stylesheets or content changes.
+
+### Static build
+
+To build a static version of the website inside the `/dist` folder, run:
 
 ```bash
 npm run build
 ```
+
+To get a preview of posts or articles not yet published, run:
+
+```bash
+npm run build-preview
+```
+
+See [package.json](package.json#L7) or the included gulp file for all tasks.
 
 ## Structure
 
@@ -70,22 +87,31 @@ will end up being available as `/favicon.ico` and so on...
 
 The `src/js/app.js` file is the entrypoint for webpack and will be built to `/dist/app.js`.
 
-You can use ES6 and use both relative imports or import libraries from npm.
+You can use **ES6** and use both relative imports or import libraries from npm.
 
 Any CSS file directly under the `src/css/` folder will get compiled with [PostCSS Next](http://cssnext.io/)
 to `/dist/css/{filename}.css`. Import statements will be resolved as part of the build
 
-## Deploying to netlify
+## Environment variables
+
+To separate the development and production *- aka build -* stages, all gulp tasks run with a node environment variable named either `development` or `production`.
+
+You can access the environment variable inside the theme files with `getenv "NODE_ENV"`. See the following example for a conditional statement:
+
+    {{ if eq (getenv "NODE_ENV") "development" }}You're in development!{{ end }}
+
+All tasks starting with *build* set the environment variable to `production` - the other will set it to `development`.
+
+## Deploying to Netlify
 
 - Push your clone to your own GitHub repository.
 - [Create a new site on Netlify](https://app.netlify.com/start) and link the repository.
 
-Now netlify will build and deploy your site whenever you push to git.
+Now Netlify will build and deploy your site whenever you push to git.
 
 You can also click this button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/eliwilliamson/victor-hugo)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify/victor-hugo)
 
 
-
-## Enjoy!!
+## Enjoy!! 😸

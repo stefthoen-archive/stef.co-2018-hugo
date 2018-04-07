@@ -5,8 +5,6 @@ please read the [code of conduct](CODE_OF_CONDUCT.md).
 
 ## Setup
 
-> Install Hugo in your system: https://github.com/spf13/hugo/releases
-
 ```sh
 $ git clone https://github.com/netlify/victor-hugo
 $ cd victor-hugo
@@ -29,7 +27,7 @@ $ npm run test
 $ npm run test:watch
 ```
 
-## Runing the server
+## Running the server
 
 ```sh
 $ npm run start
