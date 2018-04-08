@@ -64,7 +64,6 @@ footer #social-icons li {
 
 @media screen and (max-width: 480px) {
     #about figure {
-        /* @include grid(48); */
         height: 221px;
         margin-bottom: var(--vertical-margin);
     }
@@ -111,4 +110,8 @@ footer #social-icons li {
 
 #copyright a {
     color: darken(var(--third-color), 40%); 
+}
+
+#features .c-grid-item {
+	margin-top: 0;
 }
