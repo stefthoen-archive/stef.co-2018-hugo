@@ -3,11 +3,11 @@
     margin-right: auto;
     margin-left: auto;
     display: block;
-    box-shadow: rgba(#000, .3) 0 0 8px 1px;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 8px 1px;
 }
 
 #portfolio img:hover {
-    box-shadow: rgba(#000, .5) 0 0 8px 1px;
+    box-shadow: rgba(0, 0, 0, .5) 0 0 8px 1px;
 }
 
 .go-to-link {

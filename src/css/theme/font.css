@@ -10,7 +10,7 @@
     --big: 45px;
     --huge: 67.5px;
     --line-height: 1.6;
-    --vertical-margin: var(--normal) * var(--line-height);
+    --vertical-margin: calc(var(--normal) * var(--line-height));
 }
 
 @font-face {

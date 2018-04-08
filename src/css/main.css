@@ -1,5 +1,6 @@
 @import 'normalize.css';
 @import 'imports/sprite.css';
+@import 'imports/syntax.css';
 
 @import 'theme/font.css';
 @import 'theme/color.css';
@@ -29,4 +30,3 @@
 @import 'modules/widget.css';
 
 @import 'non-modular.css';
-@import 'syntax.css';

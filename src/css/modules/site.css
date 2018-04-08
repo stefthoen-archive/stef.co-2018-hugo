@@ -3,6 +3,10 @@
     overflow: auto;
 }
 
+.site__content {
+    margin-top: var(--vertical-margin);
+}
+
 .site:last-child {
     margin-bottom: 0;
 }
