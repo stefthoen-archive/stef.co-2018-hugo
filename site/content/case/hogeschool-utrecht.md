@@ -1,6 +1,6 @@
 ---
 title: "Hogeschool Utrecht"
-imagesrc: "joep-de-zoeperd.jpg"
-draft: true
+siteurl: "https://pathfinder.stef.co"
+imagesrc: "hogeschool-utrecht.jpg"
 ---
-Hier komt een verhaaltje over Hogeschool Utrecht.
+Hogeschool Utrecht vroeg mij een keuzetool te ontwikkeling, voor de selectie van strategieën voor gedragsverandering. Op basis van het ontwerp van <a target="_blank" href="https://www.panton.nl">Panton</a> heb ik een responsive React progressive web app gebouwd.
